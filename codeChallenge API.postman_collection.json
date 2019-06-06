@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "18a79320-f981-43a3-a8a5-f36a0fda0ce1",
+		"name": "codeChallenge API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listAllShifts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/shift/read.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"shift",
+						"read.php"
+					]
+				},
+				"description": "Returns all shifts sorted by start time and then alphabetically"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/shift/create.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"start_time\":\"Jun 28 2019 15:00:00\",\"length\":\"3\",\"emp_name\":\"New Test\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/shift/create.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"shift",
+						"create.php"
+					]
+				},
+				"description": "Create a shift"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/employee/read.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/employee/read.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employee",
+						"read.php"
+					]
+				},
+				"description": "List all employees"
+			},
+			"response": []
+		}
+	]
+}
